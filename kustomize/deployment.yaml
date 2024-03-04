@@ -13,9 +13,7 @@ spec:
       labels:
         app: backstage
     spec:
-      # serviceAccountName: service-a
-      # nodeSelector:
-      #   iam.gke.io/gke-metadata-server-enabled: "true"
+      serviceAccountName: controller
       containers:
       - name: backstage-container
         image: northamerica-northeast2-docker.pkg.dev/river-sonar-415120/backstage/backstage:latest
