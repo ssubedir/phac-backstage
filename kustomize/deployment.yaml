@@ -12,7 +12,7 @@ spec:
       labels:
         app: phac-backstage
     spec:
-      # serviceAccountName: controller
+      serviceAccountName: service-a
       containers:
       - name: backstage-container
         image: northamerica-northeast2-docker.pkg.dev/river-sonar-415120/backstage/backstage:latest
