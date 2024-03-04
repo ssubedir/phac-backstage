@@ -1,17 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backstage
-  namespace: backstage
+  name: phac-backstage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backstage
+      app: phac-backstage
   template:
     metadata:
       labels:
-        app: backstage
+        app: phac-backstage
     spec:
       serviceAccountName: controller
       containers:
