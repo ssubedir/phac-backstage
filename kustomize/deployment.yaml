@@ -17,7 +17,5 @@ spec:
       - name: backstage-container
         image: northamerica-northeast2-docker.pkg.dev/river-sonar-415120/backstage/backstage:latest
         ports:
-        - name: backend
+        - name: http
           containerPort: 7007
-        - name: frontend
-          containerPort: 3000
